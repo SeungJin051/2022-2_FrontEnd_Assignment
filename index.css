@@ -1,0 +1,66 @@
+body {
+  background-color: #f8fafe;
+}
+
+.main-container {
+  text-align: center;
+}
+
+.main-team {
+  margin: 30px 0px 0px 300px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #7de0ac;
+}
+
+.main-icon {
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+.main-title {
+  font-size: 42px;
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.main-ex {
+  font-size: 16px;
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 100;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.main-btn {
+  padding-left: 77px;
+  padding-right: 77px;
+  height: 52px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background-color: #03d2b4;
+  font-size: 15px;
+  border-radius: 4px;
+}
+
+.main-img {
+  margin-top: 55px;
+  margin-bottom: 40px;
+}
+
+.sub-title {
+  font-size: 30px;
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.sub-ex {
+  font-size: 16px;
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 100;
+  margin-bottom: 20px;
+  color: #828282;
+}

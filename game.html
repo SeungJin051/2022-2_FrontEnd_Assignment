@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>청춘개발자</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="main-team">청춘개발자</div>
+        <!-- <button class="game-ex">설명</button> -->
+        <button class="modal-btn">설명</button>
+        <div class="modal">
+            <div class="modal-content" title="클릭시 종료">
+                Computer Science Quiz <br>
+                컴퓨터 과학 용어를 활용한 드래그 앤 드랍 게임입니다 <br>
+                아래에 보이는 낱말들을 사용하여 올바른 용어로 만들어주세요 <br>
+                현재 보시는 화면은 글자를 클릭시 종료됩니다.
+            </div>
+        </div>
+
+    </header>
+    <div>
+        <h1 class="game-title">Computer Science Quiz</h1>
+    </div>
+
+    <div class="drop-container">
+        <div class="drop-box"></div>
+    </div>
+    <div class="kor-text"></div>
+    <div class="show-result-box"><button onclick="compareAnswer()" class="show-result">정답 !</button></div>
+    <div class="quiz-container">
+        <div class="box"></div>
+        <div class="result-text-box">
+            <div class="show-result-text">정답보기</div>
+            <div class="result-text"></div>
+        </div>
+    </div>
+    <p id="myCount"></p>
+
+</body>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="drag.js"></script>
+<script src="quizList.js"></script>
+
+</html>
