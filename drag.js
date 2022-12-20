@@ -64,17 +64,64 @@ function compareAnswer() {
   if (myAnswer == answer) {
     alert("정답입니다.");
     location.reload();
-    if (localStorage.counter == undefined) {
-      localStorage.setItem("counter", 0);
-    }
-    localStorage.counter++;
+    setCount();
+    setBestTime();
   } else {
     alert("다시 생각해보세요.");
   }
 }
 //=====================================================================
-//=====================================================================
+//Storage에 카운트 횟수 등록
+function setCount() {
+  if(localStorage.counter == undefined) {
+    localStorage.setItem("counter", 0);
+    }
+    localStorage.counter++;
+}
 
+//카운트 횟수 출력
+function printCount() {
+let nowCount = localStorage.getItem("counter");
+document.getElementById("myCount").innerHTML = `정답 개수 : ${nowCount}`; 
+}
+//=====================================================================
+function printTime() {
+  time++;
+  stopwatch.innerText = getTimeFormatString();
+}
+
+function startClock() {
+  printTime();
+  timerId = setTimeout(startClock, 1000);
+}
+
+//시간(int)을 시, 분, 초 문자열로 변환
+function getTimeFormatString() {
+  hour = parseInt(String(time / (60 * 60)));
+  min = parseInt(String((time - (hour * 60 * 60)) / 60));
+  sec = time % 60;
+
+  return String(min).padStart(2, '0') + ":" + String(sec).padStart(2, '0');
+}
+
+//Storage에 최단기록 등록
+function setBestTime() {
+  if(localStorage.minTime == undefined) {
+    localStorage.setItem("minTime", time);
+  }
+  else if(time < localStorage.minTime) {
+    localStorage.minTime = time;
+  }
+}
+
+//최단기록 출력
+function printBestTime() {
+  let bestTime = localStorage.getItem("minTime");
+  hour = parseInt(String(bestTime / (60 * 60)));
+  min = parseInt(String((bestTime - (hour * 60 * 60)) / 60));
+  sec = bestTime % 60;
+  document.getElementById("myBestTime").innerHTML = min+"분"+" "+sec+"초";
+}
 //=====================================================================
 //class card 객체 이벤트 핸들러 영역
 function onDragStartCard() {
@@ -137,12 +184,13 @@ function onDropBox() {
 
 //=====================================================================
 window.onload = function () {
-  //카운트 횟수 출력
-  let nowCount = localStorage.getItem("counter");
-  document.getElementById("myCount").innerHTML = `정답 개수 : ${nowCount}`;
   //단어 카드들을 먼저 생성한다.
   //getCardsFromWords(quizWords);
   selectQuiz();
+  printCount();
+  printBestTime();
+  startClock();
+  
   //card 객체 이벤트 핸들러 연결하기
   let cardArray = document.querySelectorAll(".card");
   let boxArray = document.querySelectorAll(".drop-container");
