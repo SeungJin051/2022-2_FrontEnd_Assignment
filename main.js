@@ -1,7 +1,9 @@
-$(".main-team").click(function () {
-  $(".modal").fadeIn();
-});
+window.onload = function () {
+  $(".main-team").click(function () {
+    $(".modal").fadeIn();
+  });
 
-$(".modal-close").click(function () {
-  $(".modal").fadeOut();
-});
+  $(".modal-close").click(function () {
+    $(".modal").fadeOut();
+  });
+};
