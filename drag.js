@@ -2,6 +2,9 @@
 let draggingCard = null; //드래깅 중인 카드 객체로 설정
 let dragOverBox = null; //드래깅 객체가 올라간 객체 등록
 let dragOverCard = null;
+let time = 0;
+const stopwatch = document.getElementById("stopwatch");
+let hour, min, sec;
 let quizNo = Math.floor(Math.random() * 14);
 
 //=====================================================================
