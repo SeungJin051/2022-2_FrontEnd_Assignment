@@ -11,35 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script>
-        window.onload = function () {
-            let mainBtn = document.querySelector(".main-btn");
-            let main = document.querySelector(".main-container");
-            let quizBox = document.querySelector(".quiz-container");
-
-            function removeMain() {
-                $(main).fadeOut(400);
-                setTimeout(gamePage, 450);
-            }
-            mainBtn.addEventListener("click", removeMain);
-
-
-            function gamePage() {
-                window.location.href =
-                    "https://seungjin051.github.io/2022-2_FrontEnd_Assignment/game.html";
-            }
-
-            $(".main-team").click(function () {
-                $(".modal").fadeIn();
-            });
-
-            $(".modal-close").click(function () {
-                $(".modal").fadeOut();
-            });
-        }
-
-
-    </script>
+    <script src="main.js"></script>
 </head>
 
 <body>
