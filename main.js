@@ -9,7 +9,8 @@ function removeMain() {
 mainBtn.addEventListener("click", removeMain);
 
 function gamePage() {
-  window.location.href = "game.html";
+  window.location.href =
+    "https://seungjin051.github.io/2022-2_FrontEnd_Assignment/game.html";
 }
 
 $(".main-team").click(function () {
