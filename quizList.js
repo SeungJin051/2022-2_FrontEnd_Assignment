@@ -6,10 +6,6 @@ let quizSet = {
       kor: "컴퓨터와 그것들이 어떻게 사용될 수 있는지에 대한 연구",
     },
     {
-      eng: "Our work contributes to several areas of computer science and engineering.",
-      kor: "우리의 연구는 컴퓨터 과학과 공학의 여러 분야에 기여한다.",
-    },
-    {
       eng: "Search trees are fundamental data structures in computer science.",
       kor: "검색 트리는 컴퓨터 과학의 기본 데이터 구조이다.",
     },
@@ -26,10 +22,6 @@ let quizSet = {
       kor: "1024 메가바이트로 구성된 컴퓨터 정보의 단위",
     },
     {
-      eng: "The system keeps crashing and no one is able to figure out why",
-      kor: "시스템이 계속 다운되고 아무도 그 이유를 알 수 없다.",
-    },
-    {
       eng: "a list of instructions for solving a problem",
       kor: "문제를 해결하기 위한 지침 목록",
     },
@@ -42,7 +34,7 @@ let quizSet = {
       kor: "그래픽 사용자 인터페이스",
     },
     {
-      eng: "Hyper Text Markup Language",
+      eng: "hyper text markup language",
       kor: "하이퍼텍스트 마크업 언어",
     },
     {
@@ -54,8 +46,40 @@ let quizSet = {
       kor: "영어 단어 학습 애플리케이션 설계 및 구현",
     },
     {
-      eng: "Predictiong long-term workers in the company using regression",
-      kor: "회귀 분석을 사용한 회사의 장기 근로자 예측",
+      eng: "Uniform Resource Locator",
+      kor: "url",
+    },
+    {
+      eng: "Review Of Some Cryptographic Algorithms In Cloud Computing",
+      kor: "클라우드 컴퓨팅의 일부 암호화 알고리즘 검토",
+    },
+    {
+      eng: "The Importance of Artificial Intelligence to Economic Growth",
+      kor: "경제성장에 대한 인공지능의 중요성",
+    },
+    {
+      eng: "central processing unit",
+      kor: "중앙 처리 장치(CPU)",
+    },
+    {
+      eng: "random access memory",
+      kor: "RAM",
+    },
+    {
+      eng:"Content Delivery Network",
+      kor:"콘텐츠 전송 네트워크(CDN)"
+    },
+    {
+      eng:"Professional HyperText Preprocessor",
+      kor:"전문 하이퍼텍스트 전처리장치(PHP)",
+    },
+    {
+      eng: "Cascading Style Sheets",
+      kor: "CSS",
+    },
+    {
+      eng:"American Standard code for Information Interchange",
+      kor:"아스키 코드(ASCII)",
     },
   ],
 };
