@@ -12,13 +12,13 @@ window.onload = function () {
       "https://seungjin051.github.io/2022-2_FrontEnd_Assignment/game.html";
   }
 
-  $(".main-team").click(function () {
-    $(".modal").fadeIn();
-  });
+  // $(".main-team").click(function () {
+  //   $(".modal").fadeIn();
+  // });
 
-  $(".modal-close").click(function () {
-    $(".modal").fadeOut();
-  });
+  // $(".modal-close").click(function () {
+  //   $(".modal").fadeOut();
+  // });
 
   mainBtn.addEventListener("click", removeMain);
 };
