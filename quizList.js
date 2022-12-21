@@ -34,7 +34,7 @@ let quizSet = {
       kor: "그래픽 사용자 인터페이스",
     },
     {
-      eng: "hyper text markup language",
+      eng: "Hyper Text Markup Language",
       kor: "하이퍼텍스트 마크업 언어",
     },
     {
@@ -66,20 +66,20 @@ let quizSet = {
       kor: "RAM",
     },
     {
-      eng:"Content Delivery Network",
-      kor:"콘텐츠 전송 네트워크(CDN)"
+      eng: "Content Delivery Network",
+      kor: "콘텐츠 전송 네트워크(CDN)",
     },
     {
-      eng:"Professional HyperText Preprocessor",
-      kor:"전문 하이퍼텍스트 전처리장치(PHP)",
+      eng: "Professional HyperText Preprocessor",
+      kor: "전문 하이퍼텍스트 전처리장치(PHP)",
     },
     {
       eng: "Cascading Style Sheets",
       kor: "CSS",
     },
     {
-      eng:"American Standard code for Information Interchange",
-      kor:"아스키 코드(ASCII)",
+      eng: "American Standard code for Information Interchange",
+      kor: "아스키 코드(ASCII)",
     },
   ],
 };
