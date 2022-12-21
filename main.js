@@ -1,8 +1,8 @@
 let mainBtn = document.querySelector(".main-btn");
+let main = document.querySelector(".main-container");
 let quizBox = document.querySelector(".quiz-container");
 
 function removeMain() {
-  let main = document.querySelector(".main-container");
   $(main).fadeOut(400);
   setTimeout(gamePage, 450);
 }
