@@ -85,6 +85,9 @@ function setCount() {
 //카운트 횟수 출력
 function printCount() {
   let nowCount = localStorage.getItem("counter");
+  if (nowCount == null) {
+    nowCount = 0;
+  }
   document.getElementById("myCount").innerHTML = `정답 개수 : ${nowCount}`;
 }
 //=====================================================================
@@ -234,8 +237,24 @@ window.onload = function () {
     $(".modal").fadeIn();
   });
 
-  $(".modal-content").click(function () {
+  $(".modal-close").click(function () {
     $(".modal").fadeOut();
+  });
+
+  $(".main-team").click(function () {
+    $(".team-modal").fadeIn();
+  });
+
+  $(".modal-close").click(function () {
+    $(".team-modal").fadeOut();
+  });
+
+  $(".log-btn").click(function () {
+    $(".log-modal").fadeIn();
+  });
+
+  $(".modal-close").click(function () {
+    $(".log-modal").fadeOut();
   });
 };
 //=====================================================================
