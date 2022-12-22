@@ -65,7 +65,7 @@ function compareAnswer() {
   console.log(answer);
 
   if (myAnswer == answer) {
-    alert("정답입니다.");
+    alert(`정답입니다.\n${getTimeFormatString()} 걸렸습니다.`);
     location.reload();
     setCount();
     setBestTime();
