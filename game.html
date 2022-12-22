@@ -15,22 +15,47 @@
 <body>
     <header>
         <div class="main-team">청춘개발자</div>
-        <!-- <button class="game-ex">설명</button> -->
-        <button class="modal-btn">설명</button>
-        <div class="modal">
-            <div class="modal-content" title="클릭시 종료">
-                Computer Science Quiz <br>
-                컴퓨터 과학 용어를 활용한 드래그 앤 드랍 게임입니다 <br>
-                아래에 보이는 낱말들을 사용하여 올바른 용어로 만들어주세요 <br>
-                현재 보시는 화면은 글자를 클릭시 종료됩니다.
+        <div class="team-modal">
+            <div class="modal-team">
+                <h2>청춘개발자들</h2>
+                <div>202222339 김수린 <a href="https://github.com/suuurin" class="Github" target="_blank"><img
+                            src="images/git.png" alt=""></a>
+                </div>
+                <div>202230752 임승진 <a href="https://github.com/SeungJin051" class="Github" target="_blank"><img
+                            src="images/git.png" alt=""></a></div>
+                <div>202248086 조상원 <a href="https://github.com/Josangwon" class="Github" target="_blank"><img
+                            src="images/git.png" alt=""></a></div>
+                <button class="modal-close">❌</button>
             </div>
         </div>
 
+        <button class="modal-btn">설명</button>
+        <div class="modal">
+            <div class="modal-content">
+                <h1 class="modal-content-title">Computer Science Quiz</h1> <br> <br>
+                컴퓨터 과학 용어를 활용한 Drag & Drop 문장 맞추기 게임입니다 <br> <br>
+                아래에 보이는 단어들을 사용하여 올바른 용어로 만들어주세요 <br> <br>
+                상단의 기록을 누르면 본인의 최단 기록과 정답 별 소요시간을 알 수 있습니다. <br> <br>
+                <button class="modal-close">❌</button>
+            </div>
+        </div>
+
+        <button class="log-btn">기록</button>
+        <div class="log-modal">
+            <div class="modal-log">
+                <div>
+                    <p>최단기록</p>
+                    <p id="myBestTime"></p>
+                </div>
+                <hr>
+                <button class="modal-close">❌</button>
+            </div>
+        </div>
     </header>
     <div>
         <h1 class="game-title">Computer Science Quiz</h1>
+        <h2 id="stopwatch">00:00</h2>
     </div>
-
     <div class="drop-container">
         <div class="drop-box"></div>
     </div>
@@ -44,8 +69,7 @@
         </div>
     </div>
     <p id="myCount"></p>
-    <p id="stopwatch">00:00</p>
-    <p id="myBestTime"></p>
+
 
 </body>
 <script src="jquery-3.6.1.min.js"></script>
