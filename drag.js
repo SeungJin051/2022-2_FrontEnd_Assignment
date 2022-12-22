@@ -5,7 +5,7 @@ let dragOverCard = null;
 let time = 0;
 const stopwatch = document.getElementById("stopwatch");
 let hour, min, sec;
-let quizNo = Math.floor(Math.random() * 14);
+let quizNo = Math.floor(Math.random() * 20);
 
 //=====================================================================
 //words 배열에 있는 단어들로 카드를 생성하는 HTML문장을 완성하는 함수
