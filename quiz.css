@@ -37,6 +37,55 @@ header {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.team-modal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.modal-team {
+  text-align: center;
+  margin-top: 10%;
+  font-size: 50px;
+  color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.modal-team h2 {
+  color: #7de0ac;
+}
+
+.modal-team div {
+  margin-top: 70px;
+}
+.Github img {
+  background-color: white;
+  border-radius: 100px;
+  height: 50px;
+}
+
+.modal-close {
+  padding-left: 77px;
+  padding-right: 77px;
+  height: 52px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background-color: white;
+  font-size: 20px;
+  border-radius: 4px;
+  margin-top: 50px;
+  transition: 0.5s;
+}
+
+.modal-close:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
 .modal {
   position: absolute;
   width: 100%;
@@ -47,19 +96,74 @@ header {
   display: none;
 }
 
+.modal-content-title {
+  font-size: 70px;
+}
+
 .modal-content {
   text-align: center;
   margin-top: 10%;
   color: white;
   font-family: "Nanum Gothic", sans-serif;
+  font-size: 30px;
 }
 
 .game-title {
   text-align: center;
-  font-size: 60px;
+  font-size: 70px;
   font-weight: 400;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.log-btn {
+  background-color: #f8fafe;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: #7de0ac;
+  margin: 28px 0px 0px 50px;
+}
+
+#stopwatch {
+  text-align: center;
+  font-size: 60px;
+}
+
+.log-modal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.modal-log {
+  text-align: center;
+  margin-top: 10%;
+  font-size: 50px;
+  color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.modal-close {
+  padding-left: 77px;
+  padding-right: 77px;
+  height: 52px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background-color: white;
+  font-size: 20px;
+  border-radius: 4px;
+  margin-top: 50px;
+  transition: 0.5s;
+}
+
+.modal-close:hover {
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .kor-text {
